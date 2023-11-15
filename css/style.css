@@ -1,0 +1,535 @@
+@charset "utf-8";
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap'); */
+
+@font-face{
+    font-family: 'soyo-r';
+    src: url('../fonts/SOYO/SOYO Maple regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: 'soyo-b';
+    src: url('../fonts/SOYO/SOYO Maple bold.ttf');
+    font-style: normal;
+    /* font-weight: normal; */
+}
+body {
+    font-family: 'soyo-r';
+    color: inherit;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+a, a:link, a:visited{
+  color:inherit;
+  text-decoration:none;
+}
+li{
+  list-style:none;
+}
+.container{
+  width:1400px;
+  margin:0 auto;
+}
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 1rem;
+    color: #fff;
+    z-index: 1;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+header button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(252, 27, 151);
+}
+header h1 {}
+header h1 button{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+header nav {}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    padding: 10px;
+}
+header nav ul li button {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* main */
+main {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: rgba(0,0,0,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+main .container {
+    width: 90%;
+}
+main h4 {
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
+}
+main h2 {
+    font-size: 4.5rem;
+    margin: 2rem 0;
+    color: rgb(252, 27, 151);
+}
+main p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 35px;
+    font-size: 1.3rem;
+}
+/* main button.mouse {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    animation: upDown 1s ease-in-out infinite;
+}
+@keyframes upDown {
+    0% { bottom: 1rem;}
+    50% { bottom: 1.5rem;}
+    100% { bottom: 1rem;}
+} */
+main h2 span::after {
+    content: '';
+    height: 60px;
+    width: 4px;
+    background-color: rgb(252, 27, 151);
+    display: inline-block;
+    animation: blink .8s ease-in-out infinite;
+}
+@keyframes blink {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+/* 공통 section */
+section {
+    padding: 5rem 0;
+    background-color: rgb(252, 27, 151);
+}
+section .title {
+    margin-bottom: 3rem;
+}
+section .title h2 {
+    font-size: 4rem;
+    color: #fff;
+    font-family: 'soyo-b';
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+section .title p {
+    font-size: 1.15rem;
+}
+
+/* about */
+/* section .about-self::after {
+    content: '';
+    display: block;
+    clear: both;
+} */
+section .about-self {
+    width: 100%; height: 600px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+section .about-self .left {
+    width: 40%;
+    margin: 30px;
+}
+section .about-self .left img {
+    max-width: 80%;
+    /* 부모영역을 초과하지 않도록 부모영역의 최대 크기로 지정 */
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+section .about-self .left p {
+    font-size: 1.15rem;
+    margin: 0.3rem 0;
+    color: #fff;
+    padding-left: 20px;
+}
+section .about-self .right {
+    width: 60%;
+    margin: 30px;
+    padding: 0 2rem; 
+}
+section .about-self .right p {
+    font-size: 1.15rem;
+    margin: 0.3rem 0;
+    color: #fff;
+}
+section .about-self .right .skill a {
+    font-size: 2.5rem;
+    margin-right: 0.2rem;
+}
+section .about-self .right .skill i {
+    color: #fff;
+    margin: 5px;
+}
+
+/* portfolio */
+
+.redesign {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.redesign h1 {
+    font-size: 3rem;
+    font-family: 'soyo-b';
+    text-shadow: 2px 2px 5px #ffffff;
+}
+.redesign .starbucks {
+    width: 100%;
+    height: 500px;
+}
+.redesign .starbucks img {
+    width: 50%;
+    float: left;
+}
+.redesign .starbucks .text {
+    width: 50%; height: 80%;
+    margin: 60px 0;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    float: left;
+}
+.redesign .starbucks .text:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.redesign .starbucks .text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'soyo-b';
+}
+.redesign .starbucks .text p {
+    line-height: 35px;
+}
+.redesign .starbucks .text .btn {
+    text-align: center;
+    margin-top: 20px;
+}
+.redesign .starbucks .text .btn button {
+    width: 150px; height: 40px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+.redesign .starbucks .text .btn button:hover {
+    background-color: rgb(252, 27, 151);
+}
+.redesign .subway {
+    width: 100%;
+    height: 500px;
+}
+.redesign .subway img {
+    width: 50%;
+    float: left;
+}
+.redesign .subway .text {
+    width: 50%; height: 80%;
+    margin: 60px 0;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);;
+    border-radius: 30px;
+    float: left;
+}
+.redesign .subway .text:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.redesign .subway .text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'soyo-b';
+}
+.redesign .subway .text p {
+    line-height: 30px;
+}
+.redesign .subway .text .btn {
+    text-align: center;
+    margin-top: 20px;
+}
+.redesign .subway .text .btn button {
+    width: 150px; height: 40px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+.redesign .subway .text .btn button:hover {
+    background-color: rgb(252, 27, 151);
+}
+.clonecoding {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.clonecoding h1 {
+    font-size: 3rem;
+    font-family: 'soyo-b';
+    text-shadow: 2px 2px 5px #ffffff;
+}
+.clonecoding .knpa {
+    width: 100%;
+    height: 500px;
+}
+.clonecoding .knpa img {
+    width: 50%;
+    float: left;
+}
+.clonecoding .knpa .text {
+    width: 50%; height: 80%;
+    margin: 60px 0;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    float: left;
+}
+.clonecoding .knpa .text:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.clonecoding .knpa .text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'soyo-b';
+}
+.clonecoding .knpa .text p {
+    line-height: 35px;
+}
+.clonecoding .knpa .text .btn {
+    text-align: center;
+    margin-top: 20px;
+}
+.clonecoding .knpa .text .btn button {
+    width: 150px; height: 40px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 10px;
+    margin-top: 50px;
+}
+.clonecoding .knpa .text .btn button:hover {
+    background-color: rgb(252, 27, 151);
+}
+.clonecoding .apple {
+    width: 100%;
+    height: 500px;
+}
+.clonecoding .apple img {
+    width: 50%;
+    float: left;
+}
+.clonecoding .apple .text {
+    width: 50%; height: 80%;
+    margin: 60px 0;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    float: left;
+}
+.clonecoding .apple .text:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.clonecoding .apple .text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'soyo-b';
+}
+.clonecoding .apple .text p {
+    line-height: 35px;
+}
+.clonecoding .apple .text .btn {
+    text-align: center;
+    margin-top: 20px;
+}
+.clonecoding .apple .text .btn button {
+    width: 150px; height: 40px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 10px;
+    margin-top: 20px;
+}
+.clonecoding .apple .text .btn button:hover {
+    background-color: rgb(252, 27, 151);
+}
+.clonecoding .kb {
+    width: 100%;
+    height: 500px;
+}
+.clonecoding .kb img {
+    width: 50%;
+    float: left;
+}
+.clonecoding .kb .text {
+    width: 50%; height: 80%;
+    margin: 60px 0;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    float: left;
+}
+.clonecoding .kb .text:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.clonecoding .kb .text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'soyo-b';
+}
+.clonecoding .kb .text p {
+    line-height: 35px;
+}
+.clonecoding .kb .text .btn {
+    text-align: center;
+    margin-top: 20px;
+}
+.clonecoding .kb .text .btn button {
+    width: 150px; height: 40px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 10px;
+    margin-top: 30px;
+}
+.clonecoding .kb .text .btn button:hover {
+    background-color: rgb(252, 27, 151);
+}
+
+
+/* contact */
+.contact {
+    padding-top: 0;
+}
+section .contact-me::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+section .contact-me {
+    width: 90%;
+    margin: 0 auto;
+}
+section .contact-me .left {
+    width: 45%;
+    float: left;
+}
+section .contact-me .left .card {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+section .contact-me .left .card .icon i {
+    font-size: 2.5rem;
+    margin-right: 15px;
+}
+section .contact-me .left .card .info-text h3 {
+    font-size: 1.5rem;
+}
+section .contact-me .left .card .info-text p {
+    font-size: 1.3rem;
+}
+section .contact-me .right {
+    width: 55%;
+    float: left;
+    /* margin-left: 5%; */
+}
+section .contact-me .right .form-group {
+    margin-bottom: 1.25rem;
+}
+section .contact-me .right .form-group label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.85rem;
+}
+section .contact-me .right .form-group input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 0.6rem;
+}
+section .contact-me .right .form-group input:focus {
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px rgb(160, 160, 160);
+}
+section .contact-me .right .form-group textarea {
+    width: 100%;
+    height: 300px;
+    resize: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    border: none;
+
+}
+section .contact-me .right .form-group textarea:focus {
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px rgb(160, 160, 160);
+}
+section .contact-me button {
+    width: 25%;
+    padding: 1rem;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+section .contact-me button:hover {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    /* border: 2px solid #000; */
+}
+section .contact-me button i {
+    color: #fff;
+    padding-left: 10px;
+}
+section .contact-me button:hover i {
+    color: #000;
+}
