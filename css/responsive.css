@@ -1,9 +1,72 @@
+@media screen and (max-width: 1400px) {
+    section .container {
+        width: 1200px;
+    }
+    main .container {
+        width: 1200px;
+    }
+    .redesign .starbucks .text {
+        height: 70%;
+    }
+    .redesign .subway .text {
+        height: 70%;
+    }
+    .clonecoding .knpa .text {
+        height: 70%;
+    }
+    .clonecoding .apple .text {
+        height: 70%;
+    }
+    .clonecoding .kb .text {
+        height: 70%;
+    }
+    .redesign .starbucks .text p {
+        line-height: 30px;
+    }
+    .redesign .subway .text p {
+        line-height: 25px;
+    }
+    .clonecoding .knpa .text p {
+        line-height: 30px;
+    }
+    .clonecoding .apple .text p {
+        line-height: 30px;
+    }
+    .clonecoding .kb .text p {
+        line-height: 30px;
+    }
+    .clonecoding .knpa .text .btn {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 1200px) {
+    main .container {
+        width: 1100px;
+    }
+    section .container {
+        width: 1100px;
+    }
+}
 @media screen and (max-width: 1140px) {
+    header h1 button {font-size: 2rem;}
+    main {
+        height: 80vh;
+    }
     main .container {
         width: 992px;
     }
+    
+    main h2 {
+        font-size: 3rem;
+    }
+    main h4 {
+        font-size: 2.5rem;
+    }
+    section .title h2 {
+        font-size: 3rem;
+    }
     section .container {
-        inline-size: 600px;
+        inline-size: 900px;
     }
     section .about-self .left {
         width: 100%;
@@ -13,53 +76,364 @@
         width: 100%;
         padding: 0;
     }
-    section .do-me .do-inner {
-        width: 48%;
-        margin-bottom: 1.5rem;
-        margin-right: 0;
+    section .about-self .left p {
+        font-size: 1rem;
     }
-    section .do-me .do-inner:nth-child(2n+1) {
-        margin-right: 4%;
+    section .about-self .right p {
+        font-size: 1rem;
     }
-    section .portfolio-inner {
-        width: 48%;
-        margin-right: 0;
+    .redesign h1 {
+        font-size: 2rem;
     }
-    section .portfolio-inner:nth-child(2n+1) {
-        margin-right: 4%;
+    .clonecoding h1 {
+        font-size: 2rem;
+    }
+    .redesign .starbucks {
+        height: 400px;
+    }
+    .redesign .starbucks img {
+        margin-top: 50px;
+    }
+    .redesign .starbucks .text {
+        height: 80%;
+    }
+    .redesign .starbucks .text h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .redesign .starbucks .text p {
+        font-size: 14px;
+    }
+    .redesign .starbucks .text .btn {
+        margin-top: 10px;
+    }
+    .redesign .subway {
+        height: 400px;
+    }
+    .redesign .subway img {
+        margin-top: 50px;
+    }
+    .redesign .subway .text {
+        height: 80%;
+    }
+    .redesign .subway .text h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .redesign .subway .text p {
+        font-size: 14px;
+    }
+    .redesign .subway .text .btn {
+        margin-top: 10px;
+    }
+    .clonecoding .knpa {
+        height: 400px;
+    }
+    .clonecoding .knpa img {
+        margin-top: 50px;
+    }
+    .clonecoding .knpa .text {
+        height: 80%;
+    }
+    .clonecoding .knpa .text h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .clonecoding .knpa .text p {
+        font-size: 14px;
+    }
+    .clonecoding .knpa .text .btn {
+        transform: translateY(-20px);
+    }
+    .clonecoding .apple {
+        height: 400px;
+    }
+    .clonecoding .apple img {
+        margin-top: 50px;
+    }
+    .clonecoding .apple .text {
+        height: 80%;
+    }
+    .clonecoding .apple .text h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .clonecoding .apple .text p {
+        font-size: 14px;
+    }
+    .clonecoding .apple .text .btn {
+        margin-top: 0px;
+        transform: translateY(-10px);
+    }
+    .clonecoding .kb {
+        height: 400px;
+    }
+    .clonecoding .kb img {
+        margin-top: 50px;
+    }
+    .clonecoding .kb .text {
+        height: 80%;
+    }
+    .clonecoding .kb .text h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .clonecoding .kb .text p {
+        font-size: 14px;
+    }
+    .clonecoding .kb .text .btn {
+        margin-top: 0px;
     }
     section .contact-me .left {
         width: 100%;
+    }
+    section .contact-me .left .card .icon i {
+        font-size: 2.2rem;
+    }
+    section .contact-me .left .card .info-text h3 {
+        font-size: 1.3rem;
+    }
+    section .contact-me .left .card .info-text p {
+        font-size: 1.2rem;
     }
     section .contact-me .right {
         width: 100%;
         margin-left: 0;
     }
+    section .contact-me .right .form-group label{
+        font-size: 1.3rem;
+    }
+    section .contact-me button {
+        width: 20%;
+    }
 }
 
 @media screen and (max-width: 992px) {
     html {font-size: 14px;}
+    section .container {width: 860px;}
     main .container {
         width: 768px;
     }
-    section .portfolio-inner {
-        width: 100%;
+    .redesign .starbucks .text p {
+        line-height: 25px;
     }
 }
+@media screen and (max-width: 870px) {
+    main .container {
+        width: 700px;
+    }
+    section .container {
+        width: 800px;
+    }
+    .redesign .starbucks .text p {
+        line-height: 25px;
+    }
+    .redesign .starbucks .text .btn {
+        transform: translateY(10px);
+        
+    }
+    .redesign .starbucks .text .btn button {
+        width: 120px; height: 30px;
+        border-radius: 7px;
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    .redesign .subway .text .btn {
+        transform: translateY(10px);
+        
+    }
+    .redesign .subway .text .btn button {
+        width: 120px; height: 30px;
+        border-radius: 7px;
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    .clonecoding .knpa .text .btn {
+        transform: translateY(30px);
+    }
+    .clonecoding .knpa .text .btn button {
+        width: 120px; height: 30px;
+        border-radius: 7px;
+        font-size: 12px;
+        margin: 0 5px;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    header nav ul li button {display: none;}
+    .mb-bt {
+        display: block;
+        z-index: 1000;
+    }
     html {font-size: 13px;}
     main .container {
         width: 576px;
+
     }
     section .container {
-        width: 400px;
+        width: 650px;
     }
-    section .do-me .do-inner {
-        width: 100%;
-        margin-right: 0;
+    section .title {
+        margin-bottom: 2.5rem;
     }
+    section .title h2 {
+        font-size: 3rem;
+    }
+    .redesign h1 {
+        font-size: 1.8rem;
+    }
+    .clonecoding h1 {
+        font-size: 1.8rem;
+    }
+    .redesign .starbucks {
+        height: 350px;
+    }
+    .redesign .starbucks img {
+        margin-top: 40px;
+    }
+    .redesign .starbucks .text {
+        height: 80%;
+        position: relative;
+    }
+    .redesign .starbucks .text h3 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    .redesign .starbucks .text p {
+        font-size: 13px;
+        line-height: 26px;
+    }
+    .redesign .starbucks .text .btn {
+        position: absolute;
+        bottom: 10px; left: -91%;
+        
+    }
+    .redesign .starbucks .text .btn button {
+        width: 120px; height: 30px;
+        border-radius: 7px;
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    .redesign .subway {
+        height: 350px;
+    }
+    .redesign .subway img {
+        margin-top: 40px;
+    }
+    .redesign .subway .text {
+        height: 80%;
+        position: relative;
+    }
+    .redesign .subway .text h3 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    .redesign .subway .text p {
+        font-size: 13px;
+        line-height: 26px;
+    }
+    .redesign .subway .text .btn {
+        position: absolute;
+        bottom: 10px; left: -91%;
+        
+    }
+    .redesign .subway .text .btn button {
+        width: 120px; height: 30px;
+        border-radius: 7px;
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    .clonecoding .knpa {
+        height: 350px;
+    }
+    .clonecoding .knpa img {
+        margin-top: 40px;
+    }
+    .clonecoding .knpa .text {
+        height: 80%;
+        position: relative;
+    }
+    .clonecoding .knpa .text h3 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    .clonecoding .knpa .text p {
+        font-size: 13px;
+        line-height: 26px;
+    }
+    .clonecoding .knpa .text .btn {
+        position: absolute;
+        bottom: 40px; left: -91%;
+        
+    }
+    .clonecoding .knpa .text .btn button {
+        width: 120px; height: 30px;
+        border-radius: 7px;
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    .clonecoding .apple {
+        height: 350px;
+    }
+    .clonecoding .apple img {
+        margin-top: 40px;
+    }
+    .clonecoding .apple .text {
+        height: 80%;
+        position: relative;
+    }
+    .clonecoding .apple .text h3 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    .clonecoding .apple .text p {
+        font-size: 13px;
+        line-height: 26px;
+    }
+    .clonecoding .apple .text .btn {
+        position: absolute;
+        bottom: 0px; left: -91%;
+        
+    }
+    .clonecoding .apple .text .btn button {
+        width: 120px; height: 30px;
+        border-radius: 7px;
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    .clonecoding .kb {
+        height: 350px;
+    }
+    .clonecoding .kb img {
+        margin-top: 40px;
+    }
+    .clonecoding .kb .text {
+        height: 80%;
+        position: relative;
+    }
+    .clonecoding .kb .text h3 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    .clonecoding .kb .text p {
+        font-size: 13px;
+        line-height: 26px;
+    }
+    .clonecoding .kb .text .btn {
+        position: absolute;
+        bottom: 10px; left: -91%;
+        
+    }
+    .clonecoding .kb .text .btn button {
+        width: 120px; height: 30px;
+        border-radius: 7px;
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    
 }
 @media screen and (max-width: 576px) {
+    header h1 button {font-size: 2.5rem;}
     html {font-size: 12px;}
     main .container {
         width: 400px;

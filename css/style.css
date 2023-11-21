@@ -30,8 +30,8 @@ li{
   list-style:none;
 }
 .container{
-  width:1400px;
-  margin:0 auto;
+  width: 1400px;
+  margin: 0 auto;
 }
 
 /* header */
@@ -44,10 +44,10 @@ header {
     z-index: 1;
 }
 header .container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 header button {
     background: transparent;
@@ -72,6 +72,52 @@ header nav ul li button {
     font-weight: bold;
 }
 
+/* 모바일 메뉴 */
+.mb-bt {
+    position: fixed;
+    right: 15px;
+    top: 25px;
+    width: 24px;
+    height: 14px;
+    z-index: 999;
+    display: none;
+}
+.mb-bt.hide {
+    top: -50px;
+}
+.mb-bt::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(252, 27, 151);
+    transition: all .3s;
+}
+.mb-bt .line {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(252, 27, 151);
+    transition: all .3s;
+}
+.mb-bt::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(252, 27, 151);
+    transition: all .3s;
+}
+
 /* main */
 main {
     width: 100%;
@@ -84,7 +130,7 @@ main {
     text-align: center;
 }
 main .container {
-    width: 90%;
+    width: 100%;
 }
 main h4 {
     font-size: 3.5rem;
@@ -136,6 +182,7 @@ section {
     padding: 5rem 0;
     background-color: rgb(252, 27, 151);
 }
+
 section .title {
     margin-bottom: 3rem;
 }
